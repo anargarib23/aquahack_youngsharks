@@ -67,6 +67,7 @@ void setup() {
 
 void loop() {
 
+  String resourcee="/aquahack/getdata/CCj5TpgOUr/";
   int newT = dht.readTemperature();
   t = newT;                                        
   int newH = dht.readHumidity();         //Temp+Humidity
@@ -135,6 +136,54 @@ void loop() {
   }
   SerialMon.println(" OK");
 
+  SerialMon.print("Connecting to ");
+  SerialMon.print(server);
+  if (!client.connect(server, port)) {
+    SerialMon.println(" fail");
+    delay(10000);
+    return;
+  }
+  SerialMon.println(" OK");
+     
+  // Make a HTTP GET request:  
+  SerialMon.println("Performing HTTP GET request...");                     // here goes the data
+  client.print(String("GET ") + resource + " HTTP/1.1\r\n");
+
+  client.print(String("Host: ") + server + "\r\n");
+  client.print("Connection: close\r\n\r\n");
+  client.println();
+
+  unsigned long timeout = millis();
+  while (client.connected() && millis() - timeout < 10000L) {
+    // Print available data
+    while (client.available()) {
+      char c = client.read();
+      SerialMon.print(c);
+      timeout = millis();
+    }
+  }
+  SerialMon.println();
+
+  // Shutdown
+
+  client.stop();
+  SerialMon.println(F("Server disconnected"));
+
+  modem.gprsDisconnect();
+  SerialMon.println(F("GPRS disconnected"));
+  
+
+  //wait for some time and then send again!
+
+//delay(2000);
+//    for(int i=0;i<120;i++){
+//      delay(1000);              //wait 2 min
+//    }
+
+    for(int i=0;i<180;i++){
+      delay(10000);             //wait 30 min
+      }
+    
 
 
   
