@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         WebView webview;
         webview = (WebView) findViewById(R.id.webview);
         webview.getSettings().setJavaScriptEnabled(true);
-        String html = "<div style=\"width: 100%; \"><iframe width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https://www.google.com/maps/d/embed?mid=1Y3zTHKIvKmYDjlGu7buY_uUbVQo7jEq_\"></iframe></div>";
+        String html = "<div style=\"width: 100%; \"><iframe width=\"102%\" height=\"101%\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https://www.google.com/maps/d/embed?mid=1Y3zTHKIvKmYDjlGu7buY_uUbVQo7jEq_\"></iframe></div>";
         webview.loadData(html, "text/html", null);
     }
 
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
 
         for (int i = 0; i < n; i++) {
             tabs.addTab(tabs.newTab());
-            tabs.getTabAt(i).setText("Device " + (i + 1));
+            tabs.getTabAt(i).setText("DEVICE " + (i + 1));
         }
         getJSON("http://askmeair.com/aquahack/api?device=1");
         try {
@@ -256,12 +256,14 @@ public class MainActivity extends AppCompatActivity {
             TextView tv4 = (TextView) findViewById(R.id.humid);
             TextView tv5 = (TextView) findViewById(R.id.level);
             TextView tv6 = (TextView) findViewById(R.id.temp);
+            TextView tv7 = (TextView) findViewById(R.id.stat);
             tv.setText(jobj.get("date") + "");
             tv2.setText(jobj.get("lat") + "");
             tv3.setText(jobj.get("longt") + "");
             tv4.setText(jobj.get("humid") + "");
             tv5.setText(jobj.get("level") + "");
             tv6.setText(jobj.get("temp") + "");
+            tv7.setText(jobj.get("status") + "");
         } catch (JSONException e) {
         }
     }

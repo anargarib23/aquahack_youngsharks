@@ -15,11 +15,12 @@
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#FF2A2D34"
-            app:tabIndicatorColor="#FF3C3F41"
+            android:layout_height="58dp"
+            android:background="#FF107894"
+            app:tabIndicatorColor="#FF2DD1EA"
             app:tabMinWidth="120dp"
             app:tabMode="scrollable"
+            app:tabTextAppearance="@android:style/TextAppearance.WindowTitle"
             app:tabTextColor="#FFFFFFFF">
 
         </android.support.design.widget.TabLayout>
@@ -27,27 +28,63 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FF3C3F41"
+
+            android:background="#FFFFFF"
             android:paddingLeft="25dp"
-            android:paddingTop="0dp"
+            android:paddingTop="20dp"
             android:paddingRight="25dp"
-            android:paddingBottom="25dp"
+            android:paddingBottom="20dp"
             android:showDividers="beginning"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp">
 
             <TableRow
+                android:id="@+id/stat_row"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_height="98dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFF0F2F3">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:gravity="center|right"
+                    android:gravity="center"
+                    android:text="Status"
+                    android:textColor="#107896"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/source_sans_pro_bold" />
+
+                <TextView
+                    android:id="@+id/stat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="xxxxxxx"
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/source_sans_pro_extralight" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFF0F2F3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
                     android:text="Date"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#107896"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/source_sans_pro_bold" />
 
                 <TextView
                     android:id="@+id/date"
@@ -55,24 +92,30 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_weight="1"
-                    android:gravity="center|right"
+                    android:gravity="center"
                     android:text="xxxxxxx"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/source_sans_pro_extralight" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/lat_row"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFF0F2F3">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:gravity="center|right"
+                    android:gravity="center"
                     android:text="Latitude"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#107896"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/source_sans_pro_bold" />
 
                 <TextView
                     android:id="@+id/lat"
@@ -80,24 +123,30 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_weight="2"
-                    android:gravity="center|right"
+                    android:gravity="center"
                     android:text="xxxxxxx"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/source_sans_pro_extralight" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/longt_row"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFF0F2F3">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:gravity="center|right"
+                    android:gravity="center"
                     android:text="Longtitude"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#107896"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/source_sans_pro_bold" />
 
                 <TextView
                     android:id="@+id/longt"
@@ -105,24 +154,30 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_weight="3"
-                    android:gravity="center|right"
+                    android:gravity="center"
                     android:text="xxxxxxx"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/source_sans_pro_extralight" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/humid_row"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFF0F2F3">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:gravity="center|right"
+                    android:gravity="center"
                     android:text="Humidity"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#107896"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/source_sans_pro_bold" />
 
                 <TextView
                     android:id="@+id/humid"
@@ -130,24 +185,30 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_weight="4"
-                    android:gravity="center|right"
+                    android:gravity="center"
                     android:text="xxxxxxx"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/source_sans_pro_extralight" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/level_row"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFF0F2F3">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:gravity="center|right"
-                    android:text="Water Level"
-                    android:textColor="#FFFFFFFF" />
+                    android:gravity="center"
+                    android:text="  Water Level"
+                    android:textColor="#107896"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/source_sans_pro_bold" />
 
                 <TextView
                     android:id="@+id/level"
@@ -155,24 +216,30 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_weight="5"
-                    android:gravity="center|right"
+                    android:gravity="center"
                     android:text="xxxxxxx"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/source_sans_pro_extralight" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/temp_row"
                 android:layout_width="fill_parent"
                 android:layout_height="98dp"
-                android:layout_weight="1">
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFF0F2F3">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:gravity="center|right"
-                    android:text="Temprature"
-                    android:textColor="#FFFFFFFF" />
+                    android:gravity="center"
+                    android:text="  Temprature"
+                    android:textColor="#107896"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/source_sans_pro_bold" />
 
                 <TextView
                     android:id="@+id/temp"
@@ -180,9 +247,11 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_weight="6"
-                    android:gravity="center|right"
+                    android:gravity="center"
                     android:text="xxxxxxx"
-                    android:textColor="#FFFFFFFF" />
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/source_sans_pro_extralight" />
             </TableRow>
 
         </TableLayout>
