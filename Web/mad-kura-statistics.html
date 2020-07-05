@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Statistics</title>
+  <meta name="generator" content="Google Web Designer 8.0.3.0603">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .gwd-rect-11b7 {
+      position: absolute;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      width: 100%;
+      left: 0%;
+      top: 0%;
+      background-image: none;
+      background-color: rgb(0, 163, 173);
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-color: transparent;
+      height: 42.02px;
+    }
+    .gwd-p-lkdu {
+      position: absolute;
+      font-size: 28px;
+      font-family: "Trebuchet MS";
+      font-style: normal;
+      font-weight: bold;
+      color: rgb(246, 244, 244);
+      width: 60.66%;
+      height: 5.54%;
+      transform-origin: 348.481px 13.2px 0px;
+      left: 0.7%;
+      top: 1.07%;
+    }
+    .gwd-rect-10yb {
+      position: absolute;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      width: 100%;
+      background-image: none;
+      background-color: rgb(217, 203, 203);
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-color: transparent;
+      transform-origin: 572px 32.6px 0px;
+      left: 0%;
+      height: 65px;
+      top: 42.02px;
+    }
+    .gwd-rect-1cun {
+      position: absolute;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      background-color: rgb(255, 255, 255);
+      width: 33%;
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-color: transparent;
+      border-radius: 100px;
+      left: 0.26%;
+      height: 50px;
+      top: 50px;
+    }
+    .gwd-span-jsdb {
+      position: absolute;
+      font-family: "Trebuchet MS";
+      font-size: 28px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      height: 7.25%;
+      width: 30.33%;
+      transform-origin: 172.745px 17.2px 0px;
+      left: 1.57%;
+      top: 58.02px;
+    }
+    .gwd-svg-6nu7 {
+      top: 50px;
+      left: 33.73%;
+    }
+    .gwd-span-1md7 {
+      top: 58px;
+      left: 34.73%;
+      color: rgb(108, 106, 106);
+    }
+    .gwd-svg-1733 {
+      width: 32%;
+      left: 67%;
+    }
+    .gwd-span-e8h5 {
+      width: 29.41%;
+      left: 67.97%;
+      color: rgb(181, 180, 180);
+    }
+    .gwd-span-1y5o {
+      left: 2.27%;
+      top: 58px;
+      width: 30.33%;
+      height: 2.45%;
+      transform-origin: 177.911px 5.757px 0px;
+    }
+    .gwd-svg-1ixu {
+      width: 32%;
+      left: 1%;
+    }
+    .gwd-span-1pvm {
+      width: 29.41%;
+      left: 34.97%;
+      border-color: transparent;
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      color: rgb(181, 180, 180);
+    }
+    .gwd-svg-428t {
+      width: 32%;
+      left: 34%;
+    }
+    .gwd-rect-pjp4 {
+      position: absolute;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      background-color: rgb(255, 255, 255);
+      left: 0px;
+      transform-origin: 572px 17.2598px 0px;
+      width: 100%;
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-color: transparent;
+      height: 25px;
+      top: 109px;
+    }
+    .gwd-span-1ppc {
+      position: absolute;
+      font-family: "Trebuchet MS";
+      font-size: 16px;
+      color: rgba(197, 188, 188, 0.95);
+      font-weight: normal;
+      text-align: center;
+      transform-origin: 321.225px 11.4px 0px;
+      left: 21.94%;
+      width: 56.12%;
+      height: 22.98px;
+      top: 110px;
+    }
+    .gwd-span-yzwf {
+      position: absolute;
+      font-family: "Trebuchet MS";
+      font-size: 28px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      height: 32px;
+      width: 385px;
+      transform-origin: 192.25px 15.8px 0px;
+      left: 5px;
+      top: 139px;
+    }
+    .gwd-rect-allz {
+      position: absolute;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-color: transparent;
+      height: 35px;
+      left: 0px;
+      top: 139px;
+    }
+    .gwd-select-123a {
+      position: absolute;
+      height: 24px;
+      top: 144px;
+      width: 8.74%;
+      left: 76%;
+    }
+    .gwd-span-wwz1 {
+      height: 23px;
+      text-align: right;
+      transform-origin: 229.874px 11.4px 0px;
+      top: 144px;
+      width: 40.12%;
+      left: 35%;
+    }
+    .gwd-select-13kh {
+      left: 89%;
+      top: 143px;
+    }
+    .gwd-span-1aoi {
+      left: 48%;
+      top: 145px;
+    }
+    .gwd-span-1a40 {
+      left: 28%;
+    }
+    .gwd-select-1dtp {
+      left: 69%;
+    }
+    .gwd-div-1v9a {
+      position: absolute;
+      height: 298px;
+      left: 0px;
+      width: 100%;
+      top: 175px;
+    }
+    .gwd-div-1kr2 {
+      position: absolute;
+      height: 298px;
+      left: 0px;
+      width: 100%;
+      top: 179px;
+    }
+    .daily_chart {
+      position: absolute;
+      width: 100%;
+      height: 344px;
+      transform-origin: 572px 171.8px 0px;
+      left: 0px;
+      top: 177px;
+    }
+    .gwd-rect-8dcd {
+      position: absolute;
+      height: 32.445px;
+      left: 0px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      background-color: rgb(255, 255, 255);
+      border-color: transparent;
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      width: 100%;
+      top: 521px;
+    }
+    .gwd-span-1367 {
+      position: absolute;
+      font-family: "Trebuchet MS";
+      font-weight: bold;
+      color: rgb(21, 20, 20);
+      font-size: 16px;
+      height: 17px;
+      top: 529px;
+      left: 4px;
+      width: 92px;
+      transform-origin: 46.1192px 8.60001px 0px;
+    }
+    .gwd-span-rav8 {
+      left: 85px;
+      transform-origin: 25.0648px 8.60001px 0px;
+      width: 4.37%;
+    }
+    .gwd-span-1dks {
+      width: 8.04%;
+    }
+    .gwd-span-1jgy {
+      left: 160px;
+    }
+    .gwd-span-1ldf {
+      left: 238px;
+    }
+    .gwd-span-8sy0 {
+      left: 27.71%;
+    }
+    .gwd-span-etsn {
+      left: 34.53%;
+    }
+    .gwd-div-t8t0 {
+      position: absolute;
+      width: 25.0125px;
+      height: 17px;
+      top: 529px;
+      left: 134.988px;
+    }
+    .gwd-span-ooak {
+      left: 20.8%;
+    }
+    .gwd-span-1i6m {
+      left: 13.99%;
+    }
+    .gwd-span-17ea {
+      left: 0.35%;
+    }
+    .gwd-span-1weo {
+      left: 7.43%;
+    }
+    .gwd-div-1iux {
+      left: 290px;
+    }
+    .gwd-svg-mh96 {
+      top: 556px;
+    }
+    .gwd-span-17x4 {
+      top: 556px;
+      color: rgb(0, 163, 173);
+    }
+    .gwd-input-ezni {
+      top: 560px;
+    }
+    .gwd-span-1uy5 {
+      top: 562px;
+    }
+    .gwd-span-enl2 {
+      top: 561px;
+    }
+    .gwd-select-11mr {
+      top: 561px;
+    }
+    .weekly_chart {
+      position: absolute;
+      width: 100%;
+      height: 344px;
+      transform-origin: 572px 171.8px 0px;
+      left: 0px;
+      top: 588px;
+    }
+    .gwd-span-mzez {
+      color: rgb(0, 163, 173);
+    }
+    .gwd-svg-peb0 {
+      top: 934px;
+    }
+    .gwd-span-1eet {
+      top: 942px;
+      left: 0.45%;
+    }
+    .gwd-span-1qw6 {
+      top: 942px;
+      left: 7.45%;
+    }
+    .gwd-span-1dia {
+      left: 14.45%;
+      top: 942px;
+    }
+    .gwd-span-1k6h {
+      transform-origin: 25.0648px 8.60001px 0px;
+      left: 21.45%;
+      top: 942px;
+    }
+    .gwd-span-abl7 {
+      top: 942px;
+      left: 28.45%;
+    }
+    .gwd-span-h2cq {
+      top: 942px;
+      left: 35.45%;
+    }
+    .gwd-svg-1hx1 {
+      left: 0px;
+      top: 521px;
+    }
+    .gwd-span-k931 {
+      left: 20.8%;
+      top: 529px;
+    }
+    .gwd-span-1u1s {
+      left: 7.43%;
+      top: 529px;
+    }
+    .gwd-span-15hz {
+      left: 0.35%;
+      top: 529px;
+    }
+    .gwd-svg-13g3 {
+      top: 968px;
+    }
+    .gwd-span-1e9v {
+      top: 968px;
+    }
+    .gwd-span-7jsg {
+      top: 974px;
+    }
+    .gwd-span-1dax {
+      top: 973px;
+    }
+    .gwd-select-kh1y {
+      top: 973px;
+    }
+    .gwd-div-1iqz {
+      position: absolute;
+      width: 100%;
+      height: 344px;
+      top: 1003px;
+      left: 5px;
+    }
+    .gwd-svg-copk {
+      top: 1349px;
+    }
+    .gwd-span-1067 {
+      top: 1357px;
+      left: 0.54%;
+    }
+    .gwd-span-1lb5 {
+      top: 1357px;
+      left: 7.54%;
+    }
+    .gwd-span-hb2b {
+      top: 1357px;
+      left: 14.54%;
+    }
+    .gwd-span-kkq8 {
+      top: 1357px;
+      left: 21.54%;
+    }
+    .gwd-span-q6yw {
+      top: 1357px;
+      left: 28.54%;
+    }
+    .gwd-span-1axs {
+      top: 1357px;
+      left: 35.54%;
+    }
+    .gwd-select-1ipf {
+      left: 89%;
+    }
+    .gwd-a-4hkt {
+      color: rgb(248, 248, 250);
+    }
+  </style>
+</head>
+
+<body class="htmlNoPages">
+  <svg data-gwd-shape="rectangle" class="gwd-rect-11b7" id="top_bar"></svg>
+  <h2 class="gwd-p-lkdu"><a href="http:///index" class="gwd-a-4hkt">Mad Kura</a></h2>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-10yb"></svg>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-1cun gwd-svg-1ixu"></svg><span class="gwd-span-jsdb gwd-span-1y5o">Device 1</span>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-1cun gwd-svg-6nu7 gwd-svg-428t"></svg><span class="gwd-span-jsdb gwd-span-1md7 gwd-span-1pvm">Device 2</span>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-1cun gwd-svg-6nu7 gwd-svg-1733"></svg><span class="gwd-span-jsdb gwd-span-1md7 gwd-span-e8h5">Device 3</span>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-pjp4"></svg><span class="gwd-span-1ppc" id="location_txt">longt, lat&nbsp; PLACE_NAME</span>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-allz"></svg><span class="gwd-span-yzwf gwd-span-mzez">Daily Summary</span>
+  <input type="date" id="date_box" class="gwd-select-123a gwd-select-13kh">
+  <span class="gwd-span-1ppc gwd-span-wwz1 gwd-span-1aoi" id="date_txt">Date:</span><span class="gwd-span-1ppc gwd-span-wwz1 gwd-span-1a40" id="parameter_txt">Parameter:</span>
+  <select id="parameter_box" class="gwd-select-123a gwd-select-1dtp">
+    <option value="0" selected="">Water Level</option>
+    <option value="0">Air Humidity</option>
+    <option value="0">Temperature</option>
+  </select>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-allz gwd-svg-mh96"></svg><span class="gwd-span-yzwf gwd-span-17x4">Weekly Summary</span>
+  <input type="date" id="date2_box" class="gwd-select-123a gwd-select-13kh gwd-input-ezni"><span class="gwd-span-1ppc gwd-span-wwz1 gwd-span-1aoi gwd-span-1uy5" id="date_txt_1">Date:</span><span class="gwd-span-1ppc gwd-span-wwz1 gwd-span-1a40 gwd-span-enl2" id="parameter2_txt">Parameter:</span>
+  <select id="parameter2_box" class="gwd-select-123a gwd-select-1dtp gwd-select-11mr">
+    <option value="0" selected="">Water Level</option>
+    <option value="0">Air Humidity</option>
+    <option value="0">Temperature</option>
+  </select>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-allz gwd-svg-mh96 gwd-svg-13g3"></svg><span class="gwd-span-yzwf gwd-span-17x4 gwd-span-1e9v">Annual Summary</span>
+  <span class="gwd-span-1ppc gwd-span-wwz1 gwd-span-1aoi gwd-span-1uy5 gwd-span-7jsg" id="date_txt_2">Year:</span><span class="gwd-span-1ppc gwd-span-wwz1 gwd-span-1a40 gwd-span-enl2 gwd-span-1dax" id="parameter2_txt_1">Parameter:</span>
+  <select id="parameter3_box" class="gwd-select-123a gwd-select-1dtp gwd-select-11mr gwd-select-kh1y">
+    <option value="0" selected="">Water Level</option>
+    <option value="0">Air Humidity</option>
+    <option value="0">Temperature</option>
+  </select>
+  <select id="parameter2_box_2" class="gwd-select-123a gwd-select-1dtp gwd-select-11mr gwd-select-kh1y gwd-select-1ipf">
+    <option value="2020" selected="">2020</option>
+  </select>
+  <div class="daily_chart" id="daily_chart"></div>
+  <script type="text/javascript">
+    var data = {
+      labels: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00'], // lables of the chart
+      series: [ // the data series in other words the lines
+        [30, 35, 32, 33, 38, 42, 39, 45, 50, 43, 37, 35, 30, 35, 32, 33, 38, 42, 39, 45, 50, 43, 37] //water level in meters per hour
+
+      ]
+    };
+    // We are setting a few options for our chart and override the defaults
+    var options = {
+      // It will not draw the line chart points
+      showPoint: true,
+      // Disables line smoothing
+      lineSmooth: false,
+      // X-Axis specific configuration
+      axisX: {
+        // We can disable the grid for this axis
+        showGrid: true,
+        // and also don't show the label
+        showLabel: true
+      },
+      // Y-Axis specific configuration
+      axisY: {
+        // Lets offset the chart a bit from the labels
+        offset: 60,
+        // The label interpolation function enables us to modify our values
+        // used for the labels on each axis.        
+        labelInterpolationFnc: function(value) {
+          return '' + value + ' m';
+        }
+      }
+    };
+    // We Pass our configuration as third parameter to the chart function for it work
+    new Chartist.Line('.daily_chart', data, options);
+  </script>
+  <div class="weekly_chart" id="weekly_chart"></div>
+  <script type="text/javascript">
+    var data2 = {
+      labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'], // lables of the chart
+      series: [ // the data series in other words the lines
+        [30, 35, 32, 33, 38, 42, 39] //water level in meters per hour
+
+      ]
+    };
+    // We are setting a few options for our chart and override the defaults
+    var options2 = {
+      // It will not draw the line chart points
+      showPoint: true,
+      // Disables line smoothing
+      lineSmooth: false,
+      // X-Axis specific configuration
+      axisX: {
+        // We can disable the grid for this axis
+        showGrid: true,
+        // and also don't show the label
+        showLabel: true
+      },
+      // Y-Axis specific configuration
+      axisY: {
+        // Lets offset the chart a bit from the labels
+        offset: 60,
+        // The label interpolation function enables us to modify our values
+        // used for the labels on each axis.        
+        labelInterpolationFnc: function(value) {
+          return '' + value + ' m';
+        }
+      }
+    };
+    // We Pass our configuration as third parameter to the chart function for it work
+    new Chartist.Line('.weekly_chart', data2, options2);
+  </script>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-8dcd gwd-svg-1hx1"></svg><span class="gwd-span-1367 gwd-span-1dks gwd-span-17ea gwd-span-15hz">Maximum:</span><span class="gwd-span-1367 gwd-span-rav8 gwd-span-1weo gwd-span-1u1s" id="max_txt">50 m</span><span class="gwd-span-1367 gwd-span-1dks gwd-span-1jgy gwd-span-1i6m">Minimum:</span>
+  <span class="gwd-span-1367 gwd-span-rav8 gwd-span-1ldf gwd-span-ooak gwd-span-k931" id="min_txt">30 m</span><span class="gwd-span-1367 gwd-span-1dks gwd-span-1jgy gwd-span-8sy0">Average:</span><span class="gwd-span-1367 gwd-span-rav8 gwd-span-1ldf gwd-span-etsn" id="average_txt">37 m</span>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-8dcd gwd-svg-peb0"></svg><span class="gwd-span-1367 gwd-span-1dks gwd-span-17ea gwd-span-1eet">Maximum:</span><span class="gwd-span-1367 gwd-span-rav8 gwd-span-1weo gwd-span-1qw6" id="max2_txt">50 m</span><span class="gwd-span-1367 gwd-span-1dks gwd-span-1jgy gwd-span-1i6m gwd-span-1dia">Minimum:</span>
+  <span class="gwd-span-1367 gwd-span-rav8 gwd-span-1ldf gwd-span-ooak gwd-span-1k6h" id="min2_txt">30 m</span><span class="gwd-span-1367 gwd-span-1dks gwd-span-1jgy gwd-span-8sy0 gwd-span-abl7">Average:</span><span class="gwd-span-1367 gwd-span-rav8 gwd-span-1ldf gwd-span-etsn gwd-span-h2cq" id="average2_txt">37 m</span>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-8dcd gwd-svg-peb0 gwd-svg-copk"></svg><span class="gwd-span-1367 gwd-span-1dks gwd-span-17ea gwd-span-1eet gwd-span-1067">Maximum:</span><span class="gwd-span-1367 gwd-span-rav8 gwd-span-1weo gwd-span-1qw6 gwd-span-1lb5" id="max3_txt">50 m</span><span class="gwd-span-1367 gwd-span-1dks gwd-span-1jgy gwd-span-1i6m gwd-span-1dia gwd-span-hb2b">Minimum:</span><span class="gwd-span-1367 gwd-span-rav8 gwd-span-1ldf gwd-span-ooak gwd-span-1k6h gwd-span-kkq8" id="min3_txt">30 m</span><span class="gwd-span-1367 gwd-span-1dks gwd-span-1jgy gwd-span-8sy0 gwd-span-abl7 gwd-span-q6yw">Average:</span><span class="gwd-span-1367 gwd-span-rav8 gwd-span-1ldf gwd-span-etsn gwd-span-h2cq gwd-span-1axs" id="average3_txt">37 m</span>
+  <div class="gwd-div-t8t0"></div>
+  <div class="gwd-div-t8t0 gwd-div-1iux"></div>
+  <div class="gwd-div-1iqz" id="yearly_chart"></div>
+  <script type="text/javascript">
+    var data3 = {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], // lables of the chart
+      series: [ // the data series in other words the lines
+        [30, 35, 32, 33, 38, 42, 39, 32, 33, 38, 42, 39] //water level in meters per hour
+
+      ]
+    };
+    // We are setting a few options for our chart and override the defaults
+    var options3 = {
+      // It will not draw the line chart points
+      showPoint: true,
+      // Disables line smoothing
+      lineSmooth: false,
+      // X-Axis specific configuration
+      axisX: {
+        // We can disable the grid for this axis
+        showGrid: true,
+        // and also don't show the label
+        showLabel: true
+      },
+      // Y-Axis specific configuration
+      axisY: {
+        // Lets offset the chart a bit from the labels
+        offset: 60,
+        // The label interpolation function enables us to modify our values
+        // used for the labels on each axis.        
+        labelInterpolationFnc: function(value) {
+          return '' + value + ' m';
+        }
+      }
+    };
+
+    new Chartist.Line('#yearly_chart', data3, options3);
+  </script>
+</body>
+
+</html>
