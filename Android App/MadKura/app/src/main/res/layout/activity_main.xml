@@ -19,10 +19,13 @@
             android:id="@+id/webview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="-7dp"
+            android:layout_marginTop="-7dp"
+            android:background="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" >
+            app:layout_constraintTop_toTopOf="parent">
 
         </WebView>
 
@@ -35,7 +38,7 @@
         android:background="#FF606575"
         android:clickable="true">
 
-        <include layout="@layout/slider_view"/>
+        <include layout="@layout/slider_view" />
 
     </RelativeLayout>
 
