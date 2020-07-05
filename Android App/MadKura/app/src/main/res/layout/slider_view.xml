@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF2A2D34"
+            app:tabIndicatorColor="#FF3C3F41"
+            app:tabMinWidth="120dp"
+            app:tabMode="scrollable"
+            app:tabTextColor="#FFFFFFFF">
+
+        </android.support.design.widget.TabLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF3C3F41"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="25dp"
+            android:showDividers="beginning"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center|right"
+                    android:text="Date"
+                    android:textColor="#FFFFFFFF" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="259dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="xxxxxxx"
+                    android:textColor="#FFFFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/lat_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center|right"
+                    android:text="Latitude"
+                    android:textColor="#FFFFFFFF" />
+
+                <TextView
+                    android:id="@+id/lat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="2"
+                    android:gravity="center|right"
+                    android:text="xxxxxxx"
+                    android:textColor="#FFFFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/longt_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center|right"
+                    android:text="Longtitude"
+                    android:textColor="#FFFFFFFF" />
+
+                <TextView
+                    android:id="@+id/longt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="3"
+                    android:gravity="center|right"
+                    android:text="xxxxxxx"
+                    android:textColor="#FFFFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/humid_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center|right"
+                    android:text="Humidity"
+                    android:textColor="#FFFFFFFF" />
+
+                <TextView
+                    android:id="@+id/humid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="4"
+                    android:gravity="center|right"
+                    android:text="xxxxxxx"
+                    android:textColor="#FFFFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/level_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center|right"
+                    android:text="Water Level"
+                    android:textColor="#FFFFFFFF" />
+
+                <TextView
+                    android:id="@+id/level"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="5"
+                    android:gravity="center|right"
+                    android:text="xxxxxxx"
+                    android:textColor="#FFFFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/temp_row"
+                android:layout_width="fill_parent"
+                android:layout_height="98dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center|right"
+                    android:text="Temprature"
+                    android:textColor="#FFFFFFFF" />
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="6"
+                    android:gravity="center|right"
+                    android:text="xxxxxxx"
+                    android:textColor="#FFFFFFFF" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
